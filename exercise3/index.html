@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        :root{
+            --commonBorderRadius: 15px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+        }
+        .card{
+            width: 300px;
+            border: 1px solid grey;
+            border-radius: var(--commonBorderRadius);
+            padding: 10px;
+            box-shadow: 10px 10px 8px #888888;
+        }
+        .card img{
+            width: 300px;
+            border-radius: 15px;
+        }
+        .tags{
+            margin: 15px 6px;
+        }
+        .tags span{
+            border: 0.5px solid grey;
+            border-radius: var(--commonBorderRadius);
+            padding: 3px 20px;
+        }
+        .content h2,p{
+            margin: 10px;
+        }
+        .more{
+            text-align: center;
+        }
+        .button{
+            cursor: pointer;
+            background-color: rgb(192, 190, 199);
+            padding: 10px 20px;
+            border-radius: var(--commonBorderRadius);
+            margin: 10px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- card.png is a file which contains a card Image. Write html and css code to design this card. Use #html -->
+
+    <div class="container">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFrZXxlbnwwfHwwfHx8MA%3D%3D" alt="Lake">
+            <div class="tags">
+                <span>Nature</span>
+                <span>Lake</span>
+            </div>
+            <div class="content">
+                <h2>Heading</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi corporis quam similique officia quia quaerat pariatur voluptas</p>
+            </div>
+            <div class="more">
+                <button class="button">Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
