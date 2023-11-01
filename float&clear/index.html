@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .cards{
+            border: 2px solid red;
+            padding: 23px;
+            margin: 23px;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid green;
+            padding: 7px;
+        }
+        .card:nth-child(2){
+            float: left;
+            width: 233px;
+            height: 233px;
+        }
+        .card:nth-child(3){
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum necessitatibus vero recusandae omnis fugit optio sed animi odio enim, placeat temporibus consectetur cumque.</div>
+        <div class="card">lorem233</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. In cupiditate repudiandae rem aliquam sequi nemo deserunt. Amet blanditiis illum perferendis a necessitatibus tempore.</div>
+    </div>
+</body>
+</html>
