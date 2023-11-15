@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            background-color: rgb(78, 66, 212);
+            height: 10vh;
+            position: sticky;
+            top: 0;
+        }
+
+        main {
+            background-color: aqua;
+            height: 100vh;
+            text-align: center;
+            padding: 12px;
+        }
+
+        footer {
+            background-color: yellow;
+            height: 100px;
+        }
+
+        .box {
+            height: 200px;
+            display: inline-block;
+            width: 48%;
+            height: 70%;
+        }
+
+        .box1 {
+            background-color: red;
+        }
+
+        .box2 {
+            background-color: green;
+        }
+
+        .content {
+            background-color: orange;
+            width: 40%;
+            margin: 12px auto;
+            height: 10vh;
+        }
+
+        .fixed {
+            position: fixed;
+            right: 23px;
+            bottom: 17px;
+            background-color: red;
+            padding: 10px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <div class="box box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quae perferendis, laudantium architecto
+            quam fugit consectetur eveniet mollitia harum ab voluptatum officia. Soluta.
+        </div>
+        <div class="box box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusantium libero
+            pariatur ullam, quod nostrum quidem fugiat nulla laborum voluptate nobis possimus. Pariatur.</div>
+        <div class="content">Welcome to sigma web development course</div>
+        <div class="fixed">
+            fixed
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
