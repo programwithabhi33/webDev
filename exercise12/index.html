@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .box{
+            width: 45px;
+            height: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+    <script>
+        let boxes = document.querySelectorAll(".box");
+        function randomColorGenerator(){
+            let val1 = Math.ceil(0 + Math.random()*(255));
+            let val2 = Math.ceil(0 + Math.random()*(255));
+            let val3 = Math.ceil(0 + Math.random()*(255));
+            return `rgb(${val1} ${val2} ${val3})`
+        }
+        function applyRandomColorInterval(){
+            Array.from(boxes).forEach(e =>{
+                e.style.backgroundColor = randomColorGenerator();
+                e.style.color = randomColorGenerator();
+                e.style.border = `2px solid ${randomColorGenerator()}`;
+            })
+        }
+        applyRandomColorInterval();
+        setInterval(applyRandomColorInterval, 800);
+    </script>
+</body>
+</html>
